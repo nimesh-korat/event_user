@@ -84,7 +84,15 @@ function ShowEvents() {
                         <ul>
                           <li>
                             <i className="fa fa-clock-o" />{" "}
-                            {new Date(event.datetime).toLocaleString()}
+                            {new Date(event.datetime).toLocaleString("en-US", {
+                              weekday: "long",
+                              year: "numeric",
+                              month: "long",
+                              day: "numeric",
+                              hour: "numeric",
+                              minute: "numeric",
+                              second: "numeric",
+                            })}
                           </li>
                           <li>
                             <i className="fa fa-map-marker" />
