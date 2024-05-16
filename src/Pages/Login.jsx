@@ -207,9 +207,6 @@ function Login() {
                     <div className="btn-layer" />
                     <input type="submit" defaultValue="Login" />
                   </div>
-                  <div className="signup-link">
-                    Not a member? <a href>Signup now</a>
-                  </div>
                 </form>
               ) : (
                 <form
